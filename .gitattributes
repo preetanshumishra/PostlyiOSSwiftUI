@@ -1,0 +1,21 @@
+# Normalize line endings to LF on checkin
+* text=auto eol=lf
+
+# Source files
+*.swift   text
+*.plist   text
+*.md      text
+*.yml     text
+*.yaml    text
+
+# Xcode project file — keep LF, avoid accidental merge unions
+*.pbxproj text eol=lf merge=union
+
+# Binary assets
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.ico  binary
+*.xcassets/** binary
